@@ -9,10 +9,11 @@ public partial class sprite_cs_2d : Sprite2D
 
     public override void _Process(double delta)
     {
-        Rotation += _angularSpeed * (float)delta;
+        Rotation += _angularSpeed * (float)delta; //rotates sprite in place
+
         var velocity = Vector2.Up.Rotated(Rotation) * _speed;
 
-        Position += velocity * (float)delta;
+        Position += velocity * (float)delta; //sprite moves in circle using Vector2 and rotated()
 
     }
 
@@ -21,6 +22,7 @@ public partial class sprite_cs_2d : Sprite2D
     //    GD.Print("Hello, World!");
     //}
 
+    //tried using input callbacks that don't happen every frame
     //public override void _UnhandledInput(InputEvent @event)
     //{
     //    if (@event is InputEventKey eventKey)
