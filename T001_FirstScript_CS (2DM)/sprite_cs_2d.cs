@@ -13,10 +13,23 @@ public partial class sprite_cs_2d : Sprite2D
         var velocity = Vector2.Up.Rotated(Rotation) * _speed;
 
         Position += velocity * (float)delta;
+
     }
 
     //public sprite_cs_2d()
     //{
     //    GD.Print("Hello, World!");
     //}
+
+    //public override void _UnhandledInput(InputEvent @event)
+    //{
+    //    if (@event is InputEventKey eventKey)
+    //    {
+    //        if (eventKey.Pressed && eventKey.Keycode == Key.Escape)
+    //        {
+    //            GetTree().Quit();
+    //        }
+    //    }
+    //}
+
 }

@@ -1,5 +1,6 @@
 extends Sprite2D
 
+
 var speed = 400
 var angular_speed = PI
 
@@ -12,3 +13,8 @@ func _process(delta):
 
 #func _init():
 	#print("Hello, World!")
+
+#func  _unhandled_input(event):
+	#if event is InputEventKey:
+		#if event.pressed and event.keycode == KEY_ESCAPE:
+			#get_tree().quit()
