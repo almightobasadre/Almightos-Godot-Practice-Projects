@@ -1,0 +1,19 @@
+﻿Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "T002_PlayerInput_CS (2DM)", "T002_PlayerInput_CS (2DM).csproj", "{82590617-6BD4-430F-8256-30F8970510AD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+	Debug|Any CPU = Debug|Any CPU
+	ExportDebug|Any CPU = ExportDebug|Any CPU
+	ExportRelease|Any CPU = ExportRelease|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{82590617-6BD4-430F-8256-30F8970510AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82590617-6BD4-430F-8256-30F8970510AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82590617-6BD4-430F-8256-30F8970510AD}.ExportDebug|Any CPU.ActiveCfg = ExportDebug|Any CPU
+		{82590617-6BD4-430F-8256-30F8970510AD}.ExportDebug|Any CPU.Build.0 = ExportDebug|Any CPU
+		{82590617-6BD4-430F-8256-30F8970510AD}.ExportRelease|Any CPU.ActiveCfg = ExportRelease|Any CPU
+		{82590617-6BD4-430F-8256-30F8970510AD}.ExportRelease|Any CPU.Build.0 = ExportRelease|Any CPU
+	EndGlobalSection
+EndGlobal
