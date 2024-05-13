@@ -5,3 +5,12 @@
 [node name="Node2D" type="Node2D"]
 
 [node name="SpriteGD2D3" parent="." instance=ExtResource("1_f3bgy")]
+
+[node name="ToggleMotion" type="Button" parent="."]
+offset_left = 450.0
+offset_top = 450.0
+offset_right = 650.0
+offset_bottom = 525.0
+text = "Toggle Motion"
+
+[connection signal="pressed" from="ToggleMotion" to="SpriteGD2D3" method="_on_toggle_motion_pressed"]
