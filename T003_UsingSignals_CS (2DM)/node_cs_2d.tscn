@@ -5,3 +5,12 @@
 [node name="NodeCS2D" type="Node2D"]
 
 [node name="SpriteCS2D3" parent="." instance=ExtResource("1_6d1nv")]
+
+[node name="ToggleMotion" type="Button" parent="."]
+offset_left = 450.0
+offset_top = 450.0
+offset_right = 650.0
+offset_bottom = 525.0
+text = "ToggleMotion"
+
+[connection signal="pressed" from="ToggleMotion" to="SpriteCS2D3" method="OnToggleMotionPressed"]
