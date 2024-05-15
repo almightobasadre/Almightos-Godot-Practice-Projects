@@ -12,4 +12,9 @@ public partial class sprite_cs_2d_3 : Sprite2D
         var velocity = Vector2.Up.Rotated(Rotation) * _speed;
         Position += velocity * (float)delta;
     }
+
+    private void OnToggleMotionPressed()
+    {
+        SetProcess(!IsProcessing());
+    }
 }
