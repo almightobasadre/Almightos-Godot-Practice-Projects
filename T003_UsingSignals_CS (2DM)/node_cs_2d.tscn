@@ -6,6 +6,9 @@
 
 [node name="SpriteCS2D3" parent="." instance=ExtResource("1_6d1nv")]
 
+[node name="Timer" type="Timer" parent="SpriteCS2D3"]
+autostart = true
+
 [node name="ToggleMotion" type="Button" parent="."]
 offset_left = 450.0
 offset_top = 450.0
