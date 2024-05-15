@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "F:\\_Projects\\Almightos-Godot-Practice-Projects\\T003_UsingSignals_CS (2DM)\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B5AB4E6E-CA35-43B8-9507-97AEF9041EC5}|T003_UsingSignals_CS (2DM).csproj|f:\\_projects\\almightos-godot-practice-projects\\t003_usingsignals_cs (2dm)\\sprite_cs_2d_3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B5AB4E6E-CA35-43B8-9507-97AEF9041EC5}|T003_UsingSignals_CS (2DM).csproj|solutionrelative:sprite_cs_2d_3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "sprite_cs_2d_3.cs",
+              "DocumentMoniker": "F:\\_Projects\\Almightos-Godot-Practice-Projects\\T003_UsingSignals_CS (2DM)\\sprite_cs_2d_3.cs",
+              "RelativeDocumentMoniker": "sprite_cs_2d_3.cs",
+              "ToolTip": "F:\\_Projects\\Almightos-Godot-Practice-Projects\\T003_UsingSignals_CS (2DM)\\sprite_cs_2d_3.cs",
+              "RelativeToolTip": "sprite_cs_2d_3.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-15T10:17:59.154Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
