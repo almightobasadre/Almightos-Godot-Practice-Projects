@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://cpm0dal58i5tb"]
+
+[ext_resource type="Texture2D" uid="uid://ce3shp4hpnyy7" path="res://assets/lifebar_background.png" id="1_osfly"]
+[ext_resource type="Texture2D" uid="uid://bms78hfut0dqe" path="res://assets/lifebar_foreground.png" id="2_ljjcq"]
+
+[node name="LifeBarGD" type="TextureProgressBar"]
+offset_left = 30.0
+offset_top = 40.0
+offset_right = 230.0
+offset_bottom = 80.0
+texture_under = ExtResource("1_osfly")
+texture_over = ExtResource("2_ljjcq")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 10.0
+offset_top = -25.0
+offset_right = 130.0
+text = "Player Health"

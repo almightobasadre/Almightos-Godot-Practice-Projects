@@ -1,0 +1,13 @@
+[gd_scene load_steps=4 format=3 uid="uid://ckiyl62577e50"]
+
+[ext_resource type="PackedScene" uid="uid://d0wjm1o5klb8p" path="res://scenes/player_gd.tscn" id="1_jq3ke"]
+[ext_resource type="PackedScene" uid="uid://c1lumdaq2rwbx" path="res://scenes/enemy_gd.tscn" id="2_ku5cq"]
+[ext_resource type="PackedScene" uid="uid://cpm0dal58i5tb" path="res://scenes/life_bar_gd.tscn" id="3_gmwa1"]
+
+[node name="CustomSignalGD" type="Node2D"]
+
+[node name="PlayerGD" parent="." instance=ExtResource("1_jq3ke")]
+
+[node name="EnemyGD" parent="." instance=ExtResource("2_ku5cq")]
+
+[node name="LifeBarGD" parent="." instance=ExtResource("3_gmwa1")]
