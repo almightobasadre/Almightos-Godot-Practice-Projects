@@ -1,12 +1,14 @@
-[gd_scene load_steps=3 format=3 uid="uid://c1lumdaq2rwbx"]
+[gd_scene load_steps=4 format=3 uid="uid://c1lumdaq2rwbx"]
 
 [ext_resource type="Texture2D" uid="uid://d4gtl5c03uaoy" path="res://assets/topdown-enemy.svg" id="1_0plut"]
+[ext_resource type="Script" path="res://scripts/enemy_gd.gd" id="1_hbqrd"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_eijty"]
 radius = 29.0
 
 [node name="EnemyGD" type="Area2D"]
 position = Vector2(800, 325)
+script = ExtResource("1_hbqrd")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("1_0plut")
