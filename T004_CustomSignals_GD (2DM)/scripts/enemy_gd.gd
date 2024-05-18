@@ -10,7 +10,6 @@ var angle = 0.0
 
 func _process(delta):
 	angle = wrapf(angle + angular_speed * delta, 0.0, 2 * angular_speed)
-	
 	var direction = Vector2(cos(angle), sin(2*angle))
 	
 	previous_position = position
