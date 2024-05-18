@@ -11,3 +11,5 @@
 [node name="EnemyGD" parent="." instance=ExtResource("2_ku5cq")]
 
 [node name="LifeBarGD" parent="." instance=ExtResource("3_gmwa1")]
+
+[connection signal="area_entered" from="PlayerGD" to="PlayerGD" method="_on_area_entered"]
