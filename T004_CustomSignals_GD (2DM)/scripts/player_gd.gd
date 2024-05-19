@@ -7,7 +7,7 @@ func take_damage(amount):
 	if health < 0:
 		health = 0
 	
-	print(health)
+	get_node("AnimationPlayer").play("take_damage")
 
 func _on_area_entered(area):
 	take_damage(2)
