@@ -6,22 +6,6 @@
 [sub_resource type="CircleShape2D" id="CircleShape2D_c77w3"]
 radius = 29.0
 
-[sub_resource type="Animation" id="Animation_sayae"]
-resource_name = "take_damage"
-length = 0.4
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Sprite2D:modulate")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
-"update": 0,
-"values": [Color(1, 1, 1, 1), Color(0.952941, 0.32549, 0.32549, 1), Color(1, 1, 1, 1), Color(0.952941, 0.32549, 0.32549, 1), Color(1, 1, 1, 1)]
-}
-
 [sub_resource type="Animation" id="Animation_7nbbh"]
 resource_name = "idle"
 length = 0.001
@@ -36,6 +20,22 @@ tracks/0/keys = {
 "transitions": PackedFloat32Array(1),
 "update": 0,
 "values": [Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_sayae"]
+resource_name = "take_damage"
+length = 0.4
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(0.952941, 0.32549, 0.32549, 1), Color(1, 1, 1, 1), Color(0.952941, 0.32549, 0.32549, 1), Color(1, 1, 1, 1)]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_getrm"]
@@ -60,3 +60,5 @@ libraries = {
 "": SubResource("AnimationLibrary_getrm")
 }
 autoplay = "idle"
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]
