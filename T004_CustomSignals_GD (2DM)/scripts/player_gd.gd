@@ -1,6 +1,8 @@
 extends Area2D
 
-var health = 10
+signal health_changed(new_health)
+
+var health: int = 10
 
 func take_damage(amount):
 	health -= amount
@@ -8,6 +10,7 @@ func take_damage(amount):
 		health = 0
 	
 	get_node("AnimationPlayer").play("take_damage")
+	emit_signal("health_changed", health)
 
 func _on_area_entered(area):
 	take_damage(2)
