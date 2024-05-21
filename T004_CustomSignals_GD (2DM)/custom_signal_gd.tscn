@@ -13,7 +13,5 @@ script = ExtResource("1_og7gr")
 [node name="EnemyGD" parent="." instance=ExtResource("2_ku5cq")]
 
 [node name="LifeBarGD" parent="." instance=ExtResource("3_gmwa1")]
-max_value = 10.0
-value = 10.0
 
-[connection signal="health_changed" from="PlayerGD" to="LifeBarGD" method="_on_player_gd_health_changed"]
+[connection signal="health_depleted" from="PlayerGD" to="LifeBarGD" method="_on_player_gd_health_depleted"]
