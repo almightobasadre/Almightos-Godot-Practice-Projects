@@ -1,13 +1,19 @@
-[gd_scene load_steps=4 format=3 uid="uid://cjtchihuen4vn"]
+[gd_scene load_steps=6 format=3 uid="uid://cjtchihuen4vn"]
 
 [ext_resource type="PackedScene" uid="uid://bsbn5arule4rw" path="res://scenes/player_cs.tscn" id="1_3kccn"]
+[ext_resource type="Script" path="res://scripts/player_cs.cs" id="2_6dxq6"]
 [ext_resource type="PackedScene" uid="uid://cv1dhumpsp6j2" path="res://scenes/enemy_cs.tscn" id="2_aum7d"]
 [ext_resource type="PackedScene" uid="uid://bxiortlvmkj56" path="res://scenes/life_bar_cs.tscn" id="3_2yqhf"]
+[ext_resource type="Script" path="res://scripts/life_bar_cs.cs" id="5_poht4"]
 
 [node name="CustomSignalCS" type="Node2D"]
 
 [node name="PlayerCS" parent="." instance=ExtResource("1_3kccn")]
+script = ExtResource("2_6dxq6")
 
 [node name="EnemyCS" parent="." instance=ExtResource("2_aum7d")]
 
 [node name="LifeBarCS" parent="." instance=ExtResource("3_2yqhf")]
+script = ExtResource("5_poht4")
+
+[connection signal="area_entered" from="PlayerCS" to="PlayerCS" method="OnAreaEntered"]
