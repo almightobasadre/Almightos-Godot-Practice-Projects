@@ -16,4 +16,5 @@ script = ExtResource("2_6dxq6")
 [node name="LifeBarCS" parent="." instance=ExtResource("3_2yqhf")]
 script = ExtResource("5_poht4")
 
+[connection signal="HealthDepleted" from="PlayerCS" to="LifeBarCS" method="OnPlayerCSHealthDepleted"]
 [connection signal="area_entered" from="PlayerCS" to="PlayerCS" method="OnAreaEntered"]
